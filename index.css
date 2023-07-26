@@ -1,0 +1,209 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Roboto&display=swap');
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0px 30px;
+
+    } 
+    h1 {
+        font-family: 'Poppins', sans-serif;
+    }
+    h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+    h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .align-center {
+        align-items: center;
+    }
+    .space-between {
+        justify-content: space-between;
+    }
+    .space-around {
+        justify-content: space-around;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .flex-grow {
+        flex-grow: 1;
+    }
+
+    /* ==== APP BAR ==== */
+    .appbar{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 10;
+        background-color: white;
+    }
+    .dir {
+        display: block;
+    }
+    .dir-ltr {
+
+    }
+    .flex-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+
+    .appbar-menu {
+        background-color: #fff;
+        border: 1px solid #ebebeb;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+        font-size: 8px;
+    }
+    @media (max-width: 744px) {
+        .appbar-menu {
+            display: none;
+            background-color: red;
+            border: 1px solid #ebebeb;
+            border-radius: 40px;
+            align-items: center;
+            padding: 5px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+            font-size: 8px;
+        }
+    }
+    .logo {
+        flex-grow: 0.5;
+    }
+    
+    .appbar-button {
+        color: #717171;
+        line-height: 22px;
+        cursor: pointer;
+        background: transparent;
+        padding: 0;
+        text-align: inherit;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        margin: 10px;
+        border: 1px solid transparent;
+        font-size: 10px;
+    }
+    
+    .search-button{
+        background-color: #ff385c;
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        height: 12px;
+        width: 12px;
+    }
+    .d1qcpybl {
+        width: 1px;
+        height: 12px;
+        background-color: #ebebeb;
+        margin: 0 10px;
+    }
+    .your-home {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        margin: 0;
+        text-align: inherit;
+        padding: 12px;
+        font-size: 10px;
+    }  
+    .appbar-profile {
+        display: flex;
+        align-items: center;
+    } 
+    .profile-button {
+        display: flex;
+        min-width: 10px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ebebeb;
+        border-radius:  12px;
+        padding: 1px 12px;
+    }
+    .body {
+        display: flex;
+        justify-content: center;
+        grid-auto-flow: row dense;
+        grid-auto-rows: var( --breakpoint-grid_auto-rows, minmax(-webkit-min-content,-webkit-max-content) );
+        grid-auto-rows: var( --breakpoint-grid_auto-rows, minmax(min-content,max-content) );
+        grid-gap: var(--breakpoint-grid_row-gap,0) var(--breakpoint-grid_column-gap,0);
+        grid-template-columns: var( --breakpoint-grid_column-template, repeat(var(--breakpoint-grid_columns,1),minmax(0,1fr)) );
+    }
+
+    /* ==== SEARCH BOX ==== */
+    .search-box {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ebebeb;
+        max-width: 450px;
+        padding: 8px 12px;
+        font-size: 10px;
+        border-radius: 12px;
+    }
+    .search-bar-button {
+        width: 50px;
+        height: 28px;
+        background-color: #b0b0b0;
+        border-color: #b0b0b0;
+        border-radius: 32px;
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        transition: 0.5s all ease-in-out;
+    }
+    .search-bar-button:hover {
+        background-color: red;
+        border-color: #a0a0a0;
+    }
+    .toggle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border-style: solid;
+        transform: translate3d(0,0,0);
+        background-color: white;
+        border-width: 2px;
+        border: 1px solid transparent;
+        transition: transform 250ms var(--itr-yy-z);
+    }
+
+    /* ==== CARDS ==== */
+    .card {
+        margin-top: 20px;
+        margin-left: 20px;
+        position: relative;
+        height: 250px;
+        width: 200px;
+    }
+    .card-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .hello {
+        font-family: 'Roboto', sans-serif;
+    }
